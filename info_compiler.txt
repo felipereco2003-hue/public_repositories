@@ -1,0 +1,30 @@
+Configuración de .env  en la carpeta backend:
+# Configuración del servidor
+#PORT=6000
+NODE_ENV=development
+
+# Base de datos MongoDB
+MONGODB_URI=mongodb://localhost:27017/utpl_herbario
+
+# JWT Configuración
+JWT_SECRET=herbario_utpl_jwt_secret_ke
+JWT_EXPIRES_IN=7d
+
+# URL base para códigos QR públicos(IP de y puerto en donde corre el backend)
+PUBLIC_BASE_URL=http://192.180.10.51:3000
+
+# Configuración bcrypt
+BCRYPT_SALT_ROUNDS=12
+
+Se genera con algun inicio de sesió
+MIGRATION_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NjkxZDRkZjE5YWUyZmIxMmUxYjg3YSIsImVtYWlsIjoianVhbi5wZXJlekB1dHBsLmVkdS5lYyIsInJvbGUiOiJDQVRBTE9HRVIiLCJpYXQiOjE3Njg1MTQxNDMsImV4cCI6MTc2OTExODk0M30.U_9XK63zwSlqWZOzRBzR5DPlUhzaCoRy4oNv8NyGBh0
+
+
+CONFIGURACION de .env en en la carpeta frontend:
+PORT:4000
+
+NODE_ENV=development
+
+
+#BASE URL (Debe ser la dirección en donde se está ejecutando el backen)
+API_BASE_URL:http://192.180.10.51:3000
